@@ -9,6 +9,7 @@ ENV WORK_DIR=/home
 COPY ./requirements.txt $WORK_DIR/requirements.txt
 WORKDIR $WORK_DIR
 
+RUN apt install python3 python3-pip -y
 RUN pip install -r $WORK_DIR/requirements.txt
 
 EXPOSE 5000
