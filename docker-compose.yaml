@@ -1,11 +1,11 @@
 version: "0.1"
 services :
   sesac-torch:
-    image : ysm2820/sesac-torch
+    image : ysm2820/sesac-jenkins-test
     ports : 
-      - 8888:5000
+      - 5001:5000
     volumes : 
-      - /Users/sumin/Documents/sesac/docker:/home
+      - /home/sumin.yang/jenkins:/home
     environment:
       - STAGE = DEV
 
